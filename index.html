@@ -6,80 +6,249 @@
 
 <title>Marcelo Táxi | Juiz de Fora</title>
 
-<link rel="stylesheet" href="style.css">
+<style>
 
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#f5f5f5;
+color:#333;
+}
+
+header{
+background:#FFC107;
+padding:20px;
+text-align:center;
+}
+
+header h1{
+margin:0;
+color:#003A8F;
+}
+
+.hero{
+background:#003A8F;
+color:white;
+text-align:center;
+padding:60px 20px;
+}
+
+.hero h2{
+font-size:32px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
+max-width:700px;
+margin:auto;
+}
+
+.whatsapp-btn{
+display:inline-block;
+margin-top:25px;
+padding:15px 25px;
+background:#25D366;
+color:white;
+text-decoration:none;
+font-weight:bold;
+border-radius:6px;
+}
+
+.section{
+padding:60px 20px;
+max-width:1000px;
+margin:auto;
+}
+
+.section h2{
+text-align:center;
+margin-bottom:40px;
+color:#003A8F;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:8px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.destinos{
+text-align:center;
+line-height:30px;
+font-size:18px;
+}
+
+.foto{
+text-align:center;
+}
+
+.foto img{
+max-width:400px;
+width:100%;
+border-radius:10px;
+}
+
+footer{
+background:#003A8F;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:40px;
+}
+
+.whatsapp-fixo{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:22px;
+text-decoration:none;
+}
+
+</style>
 </head>
+
 <body>
 
 <header>
 <h1>Marcelo Táxi</h1>
-<p>Viagens seguras saindo de Juiz de Fora para todo o Brasil</p>
-
-<a class="botao-whatsapp" target="_blank"
-href="https://wa.me/5532001161391?text=Olá Marcelo! Gostaria de solicitar uma corrida.">
-Pedir corrida no WhatsApp
-</a>
-
 </header>
 
-<section class="simulador">
+<section class="hero">
+<h2>Táxi em Juiz de Fora</h2>
 
-<h2>Simular viagem</h2>
+<p>
+Transporte com segurança, conforto e pontualidade.
+Serviço de táxi regulamentado com veículo vistoriado e motorista credenciado.
+</p>
 
-<select id="destino">
+<p>
+Mais de 25 anos de experiência como taxista desde 1998.
+</p>
 
-<option value="">Escolha o destino</option>
-<option value="120">Belo Horizonte</option>
-<option value="80">Rio de Janeiro</option>
-<option value="100">Petrópolis</option>
-<option value="150">Campos do Jordão</option>
-<option value="200">São Paulo</option>
-
-</select>
-
-<button onclick="calcular()">Calcular valor</button>
-
-<p id="resultado"></p>
-
+<a class="whatsapp-btn" href="https://wa.me/5532001161391" target="_blank">
+Chamar no WhatsApp
+</a>
 </section>
 
-<section class="beneficios">
+<section class="section">
+<h2>Sobre o motorista</h2>
 
-<h2>Por que viajar comigo?</h2>
+<div class="foto">
 
-<div class="grid">
+<!-- FOTO DO MOTORISTA -->
+<img src="foto-motorista.jpg" alt="Motorista Marcelo">
+
+<p>
+Taxista em Juiz de Fora desde 1998, oferecendo atendimento profissional,
+pontualidade e viagens seguras para diversos destinos.
+</p>
+
+</div>
+</section>
+
+<section class="section">
+<h2>Veículo</h2>
+
+<div class="foto">
+
+<!-- FOTO DO CARRO -->
+<img src="toyota-yaris.jpg" alt="Toyota Yaris">
+
+<p>
+Toyota Yaris confortável e seguro para suas viagens.
+</p>
+
+</div>
+</section>
+
+<section class="section">
+<h2>Serviços</h2>
+
+<div class="cards">
 
 <div class="card">
-🚕<h3>Conforto</h3>
-<p>Carro confortável para viagens longas.</p>
+<h3>Viagens intermunicipais</h3>
+<p>Transporte confortável para cidades da região e outros destinos.</p>
 </div>
 
 <div class="card">
-🛣️<h3>Viagens até 500km+</h3>
-<p>Atendo cidades vizinhas e viagens longas.</p>
+<h3>Transfer aeroportos</h3>
+<p>Viagens para aeroportos como Galeão, Santos Dumont, Confins e Zona da Mata.</p>
 </div>
 
 <div class="card">
-📍<h3>Saída de Juiz de Fora</h3>
-<p>Atendimento rápido na região.</p>
+<h3>Eventos e compromissos</h3>
+<p>Transporte para viagens pessoais, reuniões ou eventos.</p>
 </div>
 
 </div>
+</section>
 
+<section class="section">
+<h2>Destinos populares</h2>
+
+<div class="destinos">
+
+Juiz de Fora → Rio de Janeiro<br>
+Juiz de Fora → Belo Horizonte<br>
+Juiz de Fora → São Paulo<br>
+Juiz de Fora → Petrópolis<br>
+Juiz de Fora → Campos do Jordão
+
+</div>
+</section>
+
+<section class="section">
+<h2>Formas de pagamento</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Pix</h3>
+<p>Pagamento rápido e seguro.</p>
+</div>
+
+<div class="card">
+<h3>Cartão</h3>
+<p>Aceito cartão de crédito e débito.</p>
+</div>
+
+<div class="card">
+<h3>Dinheiro</h3>
+<p>Pagamento tradicional.</p>
+</div>
+
+<div class="card">
+<h3>Nota fiscal</h3>
+<p>Emissão de nota fiscal para passageiros e empresas.</p>
+</div>
+
+</div>
 </section>
 
 <footer>
 
-<p>Marcelo Táxi • Juiz de Fora MG</p>
-
-<a target="_blank"
-href="https://wa.me/5532001161391?text=Olá Marcelo! Vim pelo site e gostaria de informações.">
-Falar no WhatsApp
-</a>
+<p>Marcelo Táxi - Juiz de Fora</p>
+<p>WhatsApp: (32) 0011-61391</p>
 
 </footer>
 
-<script src="script.js"></script>
+<a class="whatsapp-fixo" href="https://wa.me/5532001161391" target="_blank">
+💬
+</a>
 
 </body>
 </html>
