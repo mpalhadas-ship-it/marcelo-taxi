@@ -1,15 +1,15 @@
 function calcular(){
 
-let destino = document.getElementById("destino").value
+  let km = document.getElementById("destino").value;
 
-if(destino == ""){
-document.getElementById("resultado").innerText = "Escolha um destino"
-return
-}
+  if(!km){
+    document.getElementById("resultado").innerHTML = "Escolha um destino.";
+    return;
+  }
 
-let valor = parseInt(destino)
+  let precoKm = 4;
+  let total = km * precoKm;
 
-document.getElementById("resultado").innerText =
-"Valor estimado: R$ " + valor
-
+  document.getElementById("resultado").innerHTML =
+    "Valor estimado: R$ " + total.toFixed(2);
 }
