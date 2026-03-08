@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Marcelo Táxi | Juiz de Fora</title>
+
+<meta name="description" content="Táxi em Juiz de Fora com motorista experiente desde 1998. Viagens intermunicipais, transfer para aeroportos e transporte confortável com veículo vistoriado.">
 
 <style>
 
 body{
 font-family: Arial, sans-serif;
 margin:0;
-background:#f5f5f5;
+background:#f4f4f4;
 color:#333;
 }
 
 header{
 background:#FFC107;
-padding:20px;
-text-align:center;
+padding:15px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
 header h1{
@@ -26,15 +32,22 @@ margin:0;
 color:#003A8F;
 }
 
+nav a{
+margin-left:20px;
+text-decoration:none;
+font-weight:bold;
+color:#003A8F;
+}
+
 .hero{
 background:#003A8F;
 color:white;
 text-align:center;
-padding:60px 20px;
+padding:80px 20px;
 }
 
 .hero h2{
-font-size:32px;
+font-size:36px;
 margin-bottom:15px;
 }
 
@@ -47,17 +60,17 @@ margin:auto;
 .whatsapp-btn{
 display:inline-block;
 margin-top:25px;
-padding:15px 25px;
+padding:15px 30px;
 background:#25D366;
 color:white;
 text-decoration:none;
 font-weight:bold;
-border-radius:6px;
+border-radius:8px;
 }
 
 .section{
 padding:60px 20px;
-max-width:1000px;
+max-width:1100px;
 margin:auto;
 }
 
@@ -69,22 +82,16 @@ color:#003A8F;
 
 .cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
 gap:20px;
 }
 
 .card{
 background:white;
 padding:25px;
-border-radius:8px;
-box-shadow:0 2px 8px rgba(0,0,0,0.1);
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
 text-align:center;
-}
-
-.destinos{
-text-align:center;
-line-height:30px;
-font-size:18px;
 }
 
 .foto{
@@ -92,9 +99,15 @@ text-align:center;
 }
 
 .foto img{
-max-width:400px;
 width:100%;
+max-width:420px;
 border-radius:10px;
+}
+
+.destinos{
+text-align:center;
+font-size:18px;
+line-height:32px;
 }
 
 footer{
@@ -102,7 +115,6 @@ background:#003A8F;
 color:white;
 text-align:center;
 padding:30px;
-margin-top:40px;
 }
 
 .whatsapp-fixo{
@@ -118,19 +130,31 @@ text-decoration:none;
 }
 
 </style>
+
 </head>
 
 <body>
 
 <header>
+
 <h1>Marcelo Táxi</h1>
+
+<nav>
+
+<a href="#sobre">Sobre</a>
+<a href="#servicos">Serviços</a>
+<a href="#destinos">Destinos</a>
+<a href="#pagamento">Pagamento</a>
+
+</nav>
+
 </header>
 
 <section class="hero">
+
 <h2>Táxi em Juiz de Fora</h2>
 
 <p>
-Transporte com segurança, conforto e pontualidade.
 Serviço de táxi regulamentado com veículo vistoriado e motorista credenciado.
 </p>
 
@@ -138,33 +162,35 @@ Serviço de táxi regulamentado com veículo vistoriado e motorista credenciado.
 Mais de 25 anos de experiência como taxista desde 1998.
 </p>
 
-<a class="whatsapp-btn" href="https://wa.me/5532001161391" target="_blank">
+<a class="whatsapp-btn" href="https://wa.me/5532991161391" target="_blank">
 Chamar no WhatsApp
 </a>
+
 </section>
 
-<section class="section">
+<section id="sobre" class="section">
+
 <h2>Sobre o motorista</h2>
 
 <div class="foto">
 
-<!-- FOTO DO MOTORISTA -->
 <img src="foto-motorista.jpg" alt="Motorista Marcelo">
 
 <p>
-Taxista em Juiz de Fora desde 1998, oferecendo atendimento profissional,
-pontualidade e viagens seguras para diversos destinos.
+Sou taxista em Juiz de Fora desde 1998, oferecendo transporte seguro,
+pontual e confortável para diversos destinos.
 </p>
 
 </div>
+
 </section>
 
 <section class="section">
+
 <h2>Veículo</h2>
 
 <div class="foto">
 
-<!-- FOTO DO CARRO -->
 <img src="toyota-yaris.jpg" alt="Toyota Yaris">
 
 <p>
@@ -172,32 +198,51 @@ Toyota Yaris confortável e seguro para suas viagens.
 </p>
 
 </div>
+
 </section>
 
-<section class="section">
+<section id="servicos" class="section">
+
 <h2>Serviços</h2>
 
 <div class="cards">
 
 <div class="card">
+
 <h3>Viagens intermunicipais</h3>
-<p>Transporte confortável para cidades da região e outros destinos.</p>
+
+<p>
+Transporte confortável para cidades da região e outros destinos.
+</p>
+
 </div>
 
 <div class="card">
-<h3>Transfer aeroportos</h3>
-<p>Viagens para aeroportos como Galeão, Santos Dumont, Confins e Zona da Mata.</p>
+
+<h3>Transfer para aeroportos</h3>
+
+<p>
+Viagens para Galeão, Santos Dumont, Confins e Zona da Mata.
+</p>
+
 </div>
 
 <div class="card">
+
 <h3>Eventos e compromissos</h3>
-<p>Transporte para viagens pessoais, reuniões ou eventos.</p>
+
+<p>
+Transporte para viagens pessoais, reuniões ou eventos.
+</p>
+
 </div>
 
 </div>
+
 </section>
 
-<section class="section">
+<section id="destinos" class="section">
+
 <h2>Destinos populares</h2>
 
 <div class="destinos">
@@ -206,49 +251,69 @@ Juiz de Fora → Rio de Janeiro<br>
 Juiz de Fora → Belo Horizonte<br>
 Juiz de Fora → São Paulo<br>
 Juiz de Fora → Petrópolis<br>
-Juiz de Fora → Campos do Jordão
+Juiz de Fora → Campos do Jordão<br>
+Juiz de Fora → Aeroportos
 
 </div>
+
 </section>
 
-<section class="section">
+<section id="pagamento" class="section">
+
 <h2>Formas de pagamento</h2>
 
 <div class="cards">
 
 <div class="card">
+
 <h3>Pix</h3>
+
 <p>Pagamento rápido e seguro.</p>
+
 </div>
 
 <div class="card">
+
 <h3>Cartão</h3>
-<p>Aceito cartão de crédito e débito.</p>
+
+<p>Aceito crédito e débito.</p>
+
 </div>
 
 <div class="card">
+
 <h3>Dinheiro</h3>
+
 <p>Pagamento tradicional.</p>
+
 </div>
 
 <div class="card">
+
 <h3>Nota fiscal</h3>
+
 <p>Emissão de nota fiscal para passageiros e empresas.</p>
+
 </div>
 
 </div>
+
 </section>
 
 <footer>
 
 <p>Marcelo Táxi - Juiz de Fora</p>
-<p>WhatsApp: (32) 0011-61391</p>
+
+<p>WhatsApp: (32) 99116-1391</p>
 
 </footer>
 
-<a class="whatsapp-fixo" href="https://wa.me/5532001161391" target="_blank">
+<a class="whatsapp-fixo" href="https://wa.me/5532991161391" target="_blank">
+
 💬
+
 </a>
 
 </body>
+
 </html>
