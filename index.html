@@ -1,51 +1,83 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-br">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Marcelo Táxi | Viagens Intermunicipais</title>
+<title>Marcelo Táxi | Juiz de Fora</title>
 
 <link rel="stylesheet" href="style.css">
 
 </head>
-
 <body>
 
 <header>
-
 <h1>Marcelo Táxi</h1>
-<p>Viagens intermunicipais com conforto e segurança</p>
+<p>Viagens seguras saindo de Juiz de Fora para todo o Brasil</p>
 
-<a href="https://wa.me/5532991161391">
+<a class="botao-whatsapp" target="_blank"
+href="https://wa.me/5532001161391?text=Olá Marcelo! Gostaria de solicitar uma corrida.">
 Pedir corrida no WhatsApp
 </a>
 
 </header>
 
-<section>
+<section class="simulador">
 
 <h2>Simular viagem</h2>
 
 <select id="destino">
 
 <option value="">Escolha o destino</option>
-<option value="185">Rio de Janeiro</option>
-<option value="260">Belo Horizonte</option>
-<option value="200">Aeroporto Galeão</option>
-<option value="480">São Paulo</option>
+<option value="120">Belo Horizonte</option>
+<option value="80">Rio de Janeiro</option>
+<option value="100">Petrópolis</option>
+<option value="150">Campos do Jordão</option>
+<option value="200">São Paulo</option>
 
 </select>
 
-<button onclick="calcular()">
-Calcular valor
-</button>
+<button onclick="calcular()">Calcular valor</button>
 
 <p id="resultado"></p>
 
 </section>
+
+<section class="beneficios">
+
+<h2>Por que viajar comigo?</h2>
+
+<div class="grid">
+
+<div class="card">
+🚕<h3>Conforto</h3>
+<p>Carro confortável para viagens longas.</p>
+</div>
+
+<div class="card">
+🛣️<h3>Viagens até 500km+</h3>
+<p>Atendo cidades vizinhas e viagens longas.</p>
+</div>
+
+<div class="card">
+📍<h3>Saída de Juiz de Fora</h3>
+<p>Atendimento rápido na região.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>Marcelo Táxi • Juiz de Fora MG</p>
+
+<a target="_blank"
+href="https://wa.me/5532001161391?text=Olá Marcelo! Vim pelo site e gostaria de informações.">
+Falar no WhatsApp
+</a>
+
+</footer>
 
 <script src="script.js"></script>
 
