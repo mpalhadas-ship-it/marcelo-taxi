@@ -38,6 +38,13 @@ header {
   border-bottom: 1px solid rgba(0,184,160,0.15);
 }
 
+.header-brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+}
+
 .header-brand h1 {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 22px;
@@ -45,10 +52,27 @@ header {
   color: var(--white);
   letter-spacing: 1px;
   text-transform: uppercase;
+  line-height: 1;
 }
 
 .header-brand h1 span {
   color: var(--teal);
+}
+
+.header-tagline {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 0.8px;
+  line-height: 1;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.header-tagline span {
+  color: var(--teal);
+  font-weight: 900;
 }
 
 nav {
@@ -403,6 +427,7 @@ footer p strong { color: var(--white); }
 @media (max-width: 768px) {
   header { padding: 0 20px; }
   nav { display: none; }
+  .header-tagline { font-size: 10px; }
   .hero-inner { grid-template-columns: 1fr; padding: 60px 24px; gap: 40px; }
   #sobre .sobre-inner { grid-template-columns: 1fr; }
   .section { padding: 60px 24px; }
